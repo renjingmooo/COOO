@@ -1,0 +1,7 @@
+.DS_Store
+**/.DS_Store
+.env
+.env.*
+supabase/.temp/
+node_modules/
+media/private/

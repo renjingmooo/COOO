@@ -1,0 +1,2 @@
+[functions.unlock-album]
+verify_jwt = false

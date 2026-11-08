@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&display=swap');:root{--paper:#f5f0e8;--ink:#282b27;--muted:#77776f;--orange:#d66b42;--sage:#a8ad90;--serif:'Noto Serif SC',serif;--sans:'DM Sans','Noto Sans SC',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}header,footer{height:76px;padding:0 7vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e1dbd1}header>a:last-child,footer>a:last-child{font-size:11px;color:var(--ink);text-decoration:none}.logo{font:700 40px/1 "Zuume Cut",Impact,"Arial Narrow",sans-serif;letter-spacing:.02em;color:var(--ink);text-decoration:none}.hero{min-height:660px;padding:8vh 10vw;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:6vw}.hero small,.heading small,.end small{font-size:10px;letter-spacing:.2em;color:var(--muted)}h1{font:500 clamp(36px,4.2vw,60px)/1.5 var(--serif);letter-spacing:.04em;margin:22px 0}em{font-style:normal;color:var(--orange)}.hero p{color:var(--muted);font-size:13px;line-height:2}.scroll{display:inline-block;margin-top:35px;text-decoration:none;color:var(--ink);font-size:11px;letter-spacing:.12em}.cover{height:min(490px,60vw);min-height:330px;position:relative;overflow:hidden;border-radius:50% 50% 2px 2px;background:radial-gradient(circle at 65% 36%,#f0d19c 0 12%,transparent 12.2%),linear-gradient(#d9b38b 0 45%,#819889 45% 68%,#536c60 68%)}.cover:before,.cover:after{content:'';position:absolute;border-radius:50%;width:125%;height:50%;left:-12%;background:#9da68a;top:54%;transform:rotate(-9deg)}.cover:after{top:70%;background:#536c60;transform:rotate(6deg)}.cover span{position:absolute;z-index:2;color:white;top:10%;left:10%;font-size:11px;line-height:1.8;letter-spacing:.2em}.trips{padding:100px 10vw;background:#eee8df}.heading{display:flex;justify-content:space-between;align-items:end}.heading h2{font:500 32px var(--serif);margin:14px 0 0}.heading p{text-align:right;font:12px/1.9 var(--serif)}nav{display:flex;gap:8px;margin:35px 0 24px;flex-wrap:wrap}nav button{border:1px solid #d4ccbf;background:transparent;border-radius:24px;padding:8px 14px;cursor:pointer;color:var(--muted)}nav button.active{background:var(--ink);color:var(--paper)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 20px}.card{cursor:pointer}.card img{width:100%;aspect-ratio:1.12;object-fit:cover;display:block;background:#d9d2c5;transition:transform .3s}.card:hover img{transform:scale(1.02)}.photo{overflow:hidden;position:relative}.photo b{position:absolute;right:10px;bottom:10px;background:#f5f0e8e8;padding:7px;font-size:9px}.meta{display:flex;justify-content:space-between;gap:10px;margin-top:13px}.meta strong{font:500 17px var(--serif)}.meta time,.place{font-size:10px;color:var(--muted)}.place{letter-spacing:.08em}.end{height:330px;display:flex;align-items:center;justify-content:center;flex-direction:column}.end h2{font:500 40px var(--serif);margin:14px}.end>span{color:var(--orange);margin-top:10px}footer{height:70px;border-top:1px solid #e1dbd1;border-bottom:0}footer small{color:var(--muted);font-size:9px;letter-spacing:.15em}dialog{border:0;padding:0;width:min(1100px,94vw);max-height:88vh;background:var(--paper);color:var(--ink);box-shadow:0 20px 80px #0005}#detail{overflow:auto}dialog::backdrop{background:#171b18bb;backdrop-filter:blur(3px)}.close{position:sticky;float:right;top:10px;margin:10px 12px -42px 0;z-index:3;width:32px;height:32px;border:0;border-radius:50%;font-size:22px;cursor:pointer}.detail-layout{display:grid;grid-template-columns:minmax(190px,.34fr) minmax(0,1fr);gap:28px;min-height:min(72vh,760px);padding:58px 28px 26px}.detail-copy{align-self:start;padding:22px 0 0 12px}.detail-copy h2{margin:0;color:var(--ink);font:500 26px/1.4 var(--serif)}.detail-date{display:block;margin-top:8px;color:var(--muted);font-size:11px}.detail-intro{min-height:115px;margin:20px 0 0;color:#65675e;font:13px/1.9 var(--serif);white-space:pre-wrap}.detail-viewer{display:grid;grid-template-columns:46px minmax(0,1fr) 46px;grid-template-rows:minmax(0,1fr) auto;align-items:center;gap:8px;height:min(72vh,760px);min-height:360px}.detail-stage{display:grid;place-items:center;min-width:0;min-height:0;width:100%;height:100%;overflow:hidden;touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none}.detail-stage img,.detail-stage video{display:block;-webkit-user-drag:none;max-width:100%;max-height:calc(min(72vh,760px) - 46px);width:auto;height:auto;object-fit:contain;background:transparent}.gallery-arrow{display:grid;place-items:center;width:38px;height:38px;border:1px solid #d4ccbf;border-radius:50%;background:#f5f0e8;color:#454f44;font:20px/1 var(--sans);cursor:pointer;transition:background .18s ease,color .18s ease,border-color .18s ease}.gallery-arrow:hover:not(:disabled){border-color:#454f44;background:#454f44;color:#f5f0e8}.gallery-arrow:disabled{opacity:.35;cursor:default}.detail-count{grid-column:2;color:var(--muted);font:11px/1.4 var(--sans);letter-spacing:.08em;text-align:center}.detail-empty{color:var(--muted);font:13px/1.8 var(--serif)}@media(max-width:700px){header,footer{height:62px;padding:0 6vw}.hero{min-height:0;padding:65px 8vw;grid-template-columns:1fr;gap:30px}.hero h1{font-size:36px}.cover{height:100vw;min-height:0;max-height:430px;width:100%}.trips{padding:70px 8vw}.heading h2{font-size:25px}.heading p{font-size:10px}.grid{grid-template-columns:repeat(2,1fr);gap:24px 12px}.meta{display:block}.meta strong{font-size:14px}.meta time{display:block;margin-top:6px}.detail-layout{grid-template-columns:minmax(150px,.38fr) minmax(0,1fr);gap:14px;min-height:64vh;padding:50px 16px 18px}.detail-copy{padding:10px 0 0 4px}.detail-copy h2{font-size:21px}.detail-intro{min-height:90px;margin-top:14px;font-size:12px}.detail-viewer{grid-template-columns:34px minmax(0,1fr) 34px;height:64vh;min-height:290px;gap:4px}.gallery-arrow{width:32px;height:32px;font-size:17px}.detail-stage img,.detail-stage video{max-height:calc(64vh - 48px)}footer small{display:none}.end{height:270px}.end h2{font-size:32px}}@media(max-width:520px){.detail-layout{grid-template-columns:1fr;gap:0;padding:48px 14px 14px;min-height:0}.detail-copy{padding:8px 4px 0}.detail-copy h2{font-size:20px}.detail-intro{min-height:46px;margin-top:8px}.detail-viewer{height:60vh;min-height:260px;grid-template-columns:34px minmax(0,1fr) 34px}.detail-stage img,.detail-stage video{max-height:calc(60vh - 48px)}}@media(max-width:390px){.grid{grid-template-columns:1fr}}
+
+.nest-teaser{margin:0;padding:58px 10vw;background:#dce0d2;display:flex;justify-content:space-between;align-items:center}.nest-teaser small{font-size:10px;letter-spacing:.2em;color:#73776c}.nest-teaser h2{font:500 30px var(--serif);margin:10px 0}.nest-teaser p{font-size:12px;color:#666b60}.nest-teaser>a{border:1px solid #596454;border-radius:30px;padding:13px 20px;color:#343a33;text-decoration:none;font-size:12px}.nest-teaser>a span{padding-left:20px;color:var(--orange)}@media(max-width:700px){.nest-teaser{padding:38px 8vw;gap:15px}.nest-teaser h2{font-size:25px}.nest-teaser>a{padding:11px 14px;white-space:nowrap}}
+/* 小窝入口：清爽的浅黄 + 浅绿，玩偶图片收到后替换占位内容 */
+.nest-teaser{background:var(--paper);color:var(--ink);font-family:var(--sans)}
+.nest-teaser small{color:#72846b}
+.nest-teaser h2{font:500 30px var(--sans);letter-spacing:.04em}
+.nest-teaser p{color:#687568}
+.nest-teaser>a{background:transparent;border-color:transparent;color:var(--ink);font-family:var(--sans);transition:transform .2s,background .2s}
+.nest-teaser>a:hover{background:transparent;transform:translateY(-2px)}
+.nest-teaser>a span{color:#78936b}
+
+/* Hidden parrot easter-egg entrance */
+.nest-teaser{min-height:220px;padding:30px 8vw;display:grid;place-items:center;background:var(--paper)}
+.nest-entry{padding:0;border:0;background:transparent;cursor:pointer;border-radius:50%;-webkit-tap-highlight-color:transparent}
+.nest-bird-disc{width:142px;height:142px;border-radius:50%;background:transparent;display:grid;place-items:center;position:relative;transition:transform .28s ease,box-shadow .28s ease}
+.nest-bird-disc img{position:absolute;width:112px;height:148px;object-fit:contain;transition:opacity .18s ease,transform .22s ease}
+.nest-bird-disc .bird-rest{opacity:1}.nest-bird-disc .bird-wave{opacity:0}
+.nest-entry:hover .nest-bird-disc,.nest-entry:focus-visible .nest-bird-disc{transform:translateY(-3px) rotate(-2deg);box-shadow:0 8px 22px #536b3e33}
+.nest-entry:hover .bird-rest,.nest-entry:focus-visible .bird-rest{opacity:0;transform:scale(.96)}
+.nest-entry:hover .bird-wave,.nest-entry:focus-visible .bird-wave{opacity:1;transform:scale(1.02)}
+.nest-entry:focus-visible{outline:3px solid #536b3e;outline-offset:6px}
+.nest-entry.opening .nest-bird-disc{animation:bird-open .62s ease-in-out}
+@keyframes bird-open{0%{transform:scale(1)}35%{transform:scale(1.13) rotate(5deg)}65%{transform:scale(.96) rotate(-4deg)}100%{transform:scale(1)}}
+@media(max-width:700px){.nest-teaser{min-height:185px;padding:24px}.nest-bird-disc{width:126px;height:126px}.nest-bird-disc img{width:100px;height:132px}}
+@media(prefers-reduced-motion:reduce){.nest-bird-disc,.nest-bird-disc img{transition:none}.nest-entry.opening .nest-bird-disc{animation:none}}
+
+/* Secret-passphrase popup palette */
+:root{--secret-green:#B8CC9F;--secret-yellow:#F4E6A2}
+/* 暗号登录弹窗：所选奶油黄 + 鼠尾草绿，仅用于这张弹窗 */
+.gate-dialog{width:min(420px,88vw);max-width:420px;max-height:min(500px,70vh);padding:0;border:0;border-radius:22px;background:var(--secret-yellow);color:#394534;box-shadow:0 24px 90px #222a1c55;overflow:auto}
+.gate-dialog::backdrop{background:#22281fb3;backdrop-filter:blur(3px)}
+.gate-card{padding:32px 30px 26px;text-align:center;position:relative}
+.gate-close{position:absolute;right:12px;top:12px;z-index:5;pointer-events:auto;width:32px;height:32px;border:0;border-radius:50%;background:#fff9df;color:#455540;font-size:21px;cursor:pointer}
+.gate-parrot{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;margin:0 auto 14px;background:var(--secret-green);font-size:24px}
+.gate-eyebrow{margin:0;color:#65775c;font-size:9px;letter-spacing:.2em}
+.gate-card h2{font:500 23px var(--sans);margin:22px 0 8px;color:#394534}
+.gate-hint{margin:0 0 18px;color:#68765e;font-size:11px;letter-spacing:.04em}
+#gate-form{display:grid;grid-template-columns:1fr auto;gap:8px}
+#gate-answer{min-width:0;border:1px solid #9db388;border-radius:9px;background:#fffdf2;padding:12px 13px;font:14px var(--sans);color:#394534}
+#gate-answer:focus{outline:2px solid #78936b;outline-offset:1px}
+#gate-form button{border:0;border-radius:9px;background:var(--secret-green);color:#344137;padding:0 17px;font:500 12px var(--sans);cursor:pointer}
+#gate-form button:hover{background:#a8bf8d}#gate-form button:disabled{opacity:.55;cursor:wait}
+.gate-message{min-height:0;margin:10px 0 0;color:#68765e;font-size:11px;line-height:1.7}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.gate-dialog{width:88vw;max-height:70vh}.gate-card{padding:28px 20px 20px}.gate-card h2{font-size:20px}}
+
+/* Homepage hero photo background */
+.hero{position:relative;min-height:100svh;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background-image:linear-gradient(90deg,rgba(245,240,232,.17) 0%,rgba(245,240,232,.13) 34%,rgba(245,240,232,.06) 62%,rgba(245,240,232,0) 100%),url("media/home-background.JPG");background-size:cover;background-position:center 56%;}
+@media(max-width:700px){.hero{min-height:100svh;background-image:linear-gradient(90deg,rgba(245,240,232,.17) 0%,rgba(245,240,232,.13) 34%,rgba(245,240,232,.06) 62%,rgba(245,240,232,0) 100%),url("media/home-background.JPG");background-position:58% center;}}
+
+/* Hero contrast requested by the user */
+.hero small{color:#171916}
+.hero h1{color:#171916}
+.hero h1 em{color:#fff;text-shadow:0 1px 7px rgba(0,0,0,.28)}
+.hero p,.hero .scroll{color:#fff;text-shadow:0 1px 7px rgba(0,0,0,.38)}
+.hero>div:first-child{transform:translateX(clamp(-48px,-3.3vw,-20px)) translateY(32px)}
+
+.home-page>header{position:absolute;top:0;left:0;right:0;z-index:10;background:rgba(245,240,232,.38);backdrop-filter:blur(5px);border-bottom:0}
+.home-page>header::after{content:"";position:absolute;top:100%;left:0;right:0;height:22px;pointer-events:none;background:linear-gradient(to bottom,rgba(245,240,232,.32),rgba(245,240,232,0))}
+.home-page>header>a:last-child{color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+
+/* 独自出发的旅程合集 */
+.solo-trips{background:#f5f0e8;padding-top:76px}.solo-trips .heading{padding-bottom:0;border-bottom:0;margin-bottom:28px}.empty-collection{grid-column:1/-1;margin:0;padding:28px 0;color:var(--muted);font:13px/1.9 var(--serif)}
+
+.collection-logo{font:700 40px/1 "Zuume Cut",Impact,"Arial Narrow",sans-serif!important;letter-spacing:.02em;margin:0!important;color:var(--ink)}@media(max-width:700px){.collection-logo{font-size:34px!important}}
+
+.end h2{font-family:Helvetica,Arial,sans-serif}
+
+/* 首页小鸟彩蛋：贴在歌剧院背景图右下角 */
+.home-page .hero .nest-teaser{position:absolute;right:22%;bottom:20%;transform:translate(188px,56px);z-index:3;min-height:0;padding:0;display:block;background:transparent}
+.home-page .hero .nest-entry{display:block}
+.home-page .hero .nest-bird-disc{width:112px;height:112px;box-shadow:none}
+.home-page .hero .nest-bird-disc img{width:88px;height:116px}
+.home-page .hero .nest-entry:hover .nest-bird-disc,.home-page .hero .nest-entry:focus-visible .nest-bird-disc{box-shadow:0 8px 22px #536b3e33}
+@media(max-width:700px){.home-page .hero .nest-teaser{right:8%;bottom:14%;transform:translate(-32px,-16px)}.home-page .hero .nest-bird-disc{width:96px;height:96px}.home-page .hero .nest-bird-disc img{width:76px;height:102px}}
+
+/* 世界地图：位于个人旅程与页尾之间 */
+.world-map-section{padding:78px 5vw 86px;background:#eee8df}.world-map-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:28px}.world-map-heading h2{font:500 30px var(--serif);margin:0}.world-map-heading p{margin:0;color:var(--muted);font:12px/1.8 var(--serif)}.world-map-frame{position:relative;max-width:1500px;margin:auto;padding:24px 18px 16px;border-radius:4px;background:#f8f5ed}.map-canvas{position:relative;width:100%;aspect-ratio:2/1}.map-canvas .world-map-art,.map-canvas #world-map{position:absolute;inset:0;display:block;width:100%;height:100%}.map-canvas #world-map{overflow:visible}.world-map-heading h2{font:700 40px/1 "Zuume Cut",Impact,"Arial Narrow",sans-serif;letter-spacing:.02em}.map-marker{cursor:pointer;outline:none}.map-marker-hit{fill:transparent;stroke:none;pointer-events:all}.map-marker.is-solo .map-dot{fill:#275F3E}.map-marker.is-together .map-dot{fill:#db9b34}.map-dot{fill:#275F3E;stroke:#f8f5ed;stroke-width:.7;filter:drop-shadow(0 1px 2px #29302666);transform-box:fill-box;transform-origin:center;transition:transform .16s ease}.map-marker:hover .map-dot,.map-marker:focus-visible .map-dot{transform:scale(1.5)}.map-place-bubble{position:absolute;z-index:3;transform:translate(-50%,calc(-100% - 12px));max-width:min(220px,70vw);padding:9px 14px;border:1px solid #dce3d7;border-radius:16px 16px 16px 5px;background:#fffef9;color:#294735;font:500 13px/1.2 var(--sans);white-space:nowrap;box-shadow:0 6px 20px #26332426;pointer-events:none}.map-place-bubble:after{content:"";position:absolute;left:calc(50% - 5px);bottom:-5px;width:9px;height:9px;background:#fffef9;border-right:1px solid #dce3d7;border-bottom:1px solid #dce3d7;transform:rotate(45deg)}.map-empty{margin:8px 0 0;text-align:center;color:var(--muted);font-size:11px}.map-empty[hidden]{display:none}@media(max-width:700px){.world-map-section{padding:58px 7vw 64px}.world-map-heading{align-items:start;gap:16px}.world-map-heading h2{font-size:25px}.world-map-heading p{text-align:right;font-size:10px}.world-map-frame{padding:18px 10px 12px}.world-map-heading h2{font-size:34px}.map-marker text{font-size:16px}}
+
+/* Footprint 地图颜色图例，沿用 COOO 字体 */
+.map-legend{display:flex;align-items:center;gap:22px;padding-bottom:4px}.map-legend span{display:inline-flex;align-items:center;gap:8px}.map-legend b{font:700 18px/1 "Zuume Cut",Impact,"Arial Narrow",sans-serif;letter-spacing:.02em;color:var(--ink)}.map-legend-dot{width:9px;height:9px;border-radius:50%;display:inline-block}.map-legend-together{background:#db9b34}.map-legend-solo{background:#275F3E}@media(max-width:700px){.world-map-heading{flex-wrap:wrap}.map-legend{gap:14px}.map-legend b{font-size:16px}.map-legend-dot{width:8px;height:8px}}
+
+/* CO&OO：由新到旧横向展开，每张卡片代表一趟旅程 */
+.journey-carousel{position:relative}.journey-scroll-controls{position:absolute;z-index:2;top:50%;left:-52px;right:-52px;display:flex;justify-content:space-between;gap:7px;transform:translateY(-50%);pointer-events:none}.journey-scroll-controls button{display:grid;place-items:center;width:34px;height:34px;border:1px solid #d4ccbf;border-radius:50%;background:#f5f0e8;color:#454f44;font:18px/1 var(--sans);cursor:pointer;pointer-events:auto;box-shadow:0 2px 8px #282b2714;transition:background .18s ease,color .18s ease,border-color .18s ease}.journey-scroll-controls button:hover:not(:disabled){border-color:#454f44;background:#454f44;color:#f5f0e8}.journey-scroll-controls button:disabled{opacity:.38;cursor:default}
+.journey-track{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,31vw);grid-template-columns:none;gap:24px;overflow-x:auto;overscroll-behavior-x:contain;padding:4px 4px 22px;scroll-snap-type:x mandatory;scrollbar-color:#b8bca9 transparent;scrollbar-width:thin}
+.journey-track::before{content:"";position:absolute;top:11px;left:4px;right:auto;width:calc(100% + var(--timeline-overflow,0px));height:1px;background:#c9cbbb}
+.journey-card{position:relative;min-width:0;padding-top:27px;scroll-snap-align:start}
+.journey-card::before{content:"";position:absolute;z-index:1;top:5px;left:0;width:13px;height:13px;border:2px solid #eee8df;border-radius:50%;background:#db9b34;box-shadow:0 0 0 1px #c9cbbb}
+.journey-card.is-solo::before{background:#275f3e}
+.journey-stamp{display:flex;flex-direction:column;gap:5px;min-height:43px;margin-bottom:10px}
+.journey-stamp span{overflow:hidden;color:#64705f;font:500 10px/1.4 var(--sans);letter-spacing:.08em;text-overflow:ellipsis;white-space:nowrap}
+.journey-stamp time{color:#282b27;font:500 12px/1 var(--sans);letter-spacing:.06em}
+.journey-card .photo{aspect-ratio:1.18;background:#dedbcf}
+.journey-card .photo img{height:100%;aspect-ratio:1.18;object-fit:cover}
+.journey-copy{padding:13px 1px 0}
+.journey-copy h3{margin:0;color:#282b27;font:500 18px/1.4 var(--serif)}
+.journey-copy p{margin:5px 0 0;color:#77776f;font:11px/1.6 var(--serif)}
+.journey-card:hover::before{background:#275f3e;transform:scale(1.16)}
+@media(max-width:700px){.journey-track{grid-auto-columns:minmax(230px,78vw);gap:18px;padding-bottom:18px}.journey-card .photo,.journey-card .photo img{aspect-ratio:1.08}.journey-copy h3{font-size:16px}}
+@media(max-width:700px){.journey-scroll-controls{left:-8vw;right:-8vw}.journey-scroll-controls button{width:30px;height:30px;font-size:16px}}
+
+
+/* 同一条 CO&OO 时间轴中的日常/旅程标记 */
+.journey-copy{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.journey-kind{flex:0 0 auto;border:1px solid #d8d8cb;border-radius:999px;padding:4px 9px;color:#65715f;background:#f7f4ed;font:10px/1.2 var(--sans)}
+.journey-card.is-daily .journey-kind{border-color:#e1d2a5;background:#f4ecd0;color:#76632d}
+.journey-card.is-solo .journey-kind{border-color:#b8c9b5;background:#edf2e9;color:#275f3e}
+
+/* 年份筛选与旅记/日常筛选分组 */
+#filters{align-items:center;column-gap:10px;row-gap:9px}
+.trip-filter-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.trip-filter-divider{color:#aaa99c;font-size:14px;line-height:1}
+@media(max-width:700px){#filters{column-gap:8px}.trip-filter-group{gap:6px}}
+
+/* 顶部胶囊式栏目导航 */
+.home-page>header{position:absolute;top:0;left:0;right:0;z-index:20;margin-bottom:0;border-bottom:0;background:rgba(245,240,232,.2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}.home-page>header::after{height:18px;background:linear-gradient(to bottom,rgba(245,240,232,.16),rgba(245,240,232,0))}
+.top-nav{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;flex-wrap:nowrap;gap:3px;margin:0;padding:5px;border:1px solid rgba(255,255,255,.58);border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 2px 12px #282b2708}
+.top-nav a{position:relative;z-index:1;display:block;padding:8px 15px;border-radius:999px;color:#454940;font:500 11px/1.2 var(--sans);letter-spacing:.06em;text-decoration:none;white-space:nowrap;transform:scale(1);transition:transform .42s cubic-bezier(.2,1.65,.45,1),background .22s ease,color .22s ease,box-shadow .22s ease}
+.top-nav a:hover,.top-nav a:focus-visible{transform:scale(1.12,1.08);background:rgba(255,255,255,.86);color:#343a33;box-shadow:0 3px 12px rgba(40,43,39,.13);outline:none}.top-nav a:active{transform:scale(.96)}@media(prefers-reduced-motion:reduce){.top-nav a{transition:none}}
+@media(max-width:700px){.top-nav{position:static;transform:none;margin-left:auto;gap:0;padding:3px}.top-nav a{padding:7px 7px;font-size:9px;letter-spacing:0}.home-page>header .logo{font-size:34px}}
+@media(max-width:380px){.top-nav a{padding:6px 5px;font-size:8px}.home-page>header .logo{font-size:30px}}
+.social-links{display:grid;justify-items:center;gap:8px;margin-top:17px}
+.social-link{display:inline-flex;align-items:center;gap:8px;color:var(--ink);font:11px/1.4 var(--sans);letter-spacing:.04em;text-decoration:none;transition:opacity .18s ease,transform .22s ease}
+.social-link:hover{opacity:.7;transform:translateY(-1px)}
+.social-link svg{width:16px;height:16px;fill:currentColor;flex:0 0 auto}
+.social-link:nth-child(2) svg{fill:none;stroke:currentColor;stroke-width:1.8}
+.social-link:nth-child(2) .social-icon-dot{fill:currentColor;stroke:none}
