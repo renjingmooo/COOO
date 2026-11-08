@@ -126,3 +126,54 @@
 .social-link svg{width:16px;height:16px;fill:currentColor;flex:0 0 auto}
 .social-link:nth-child(2) svg{fill:none;stroke:currentColor;stroke-width:1.8}
 .social-link:nth-child(2) .social-icon-dot{fill:currentColor;stroke:none}
+
+/* 独立 About 页面：留白供之后补充内容 */
+.about-page{min-height:100vh;display:flex;flex-direction:column;background:var(--paper)}
+.about-page>header{position:relative;flex:0 0 auto;background:rgba(245,240,232,.52);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #e1dbd1}
+.about-main{flex:1;width:min(1200px,100%);margin:0 auto;padding:clamp(90px,14vh,170px) 8vw 100px}
+.about-main h1{margin:0;color:var(--ink);font:500 clamp(38px,5vw,56px)/1.2 Helvetica,Arial,sans-serif;letter-spacing:.01em}
+.top-nav a[aria-current="page"]{background:rgba(255,255,255,.42)}
+.about-intro{max-width:660px;margin:34px 0 0;color:#565951;font:16px/2.1 var(--serif)}
+.about-social-links{display:grid;justify-items:start;gap:11px;margin-top:38px}
+.about-social-links .social-link{font-size:13px}
+.about-youtube-note{margin:-4px 0 6px 24px;color:var(--muted);font:12px/1.8 var(--serif)}
+.about-social-links .instagram-social svg{fill:none;stroke:currentColor;stroke-width:1.8}
+.about-social-links .instagram-social .social-icon-dot{fill:currentColor;stroke:none}
+
+/* 独立 FOOTPRINT 页面与可触控地图 */
+.footprint-page{min-height:100vh;display:flex;flex-direction:column;background:var(--paper)}
+.footprint-page>header{position:relative;z-index:5;flex:0 0 auto;background:rgba(245,240,232,.52);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #e1dbd1}
+.footprint-page>main{flex:1}
+.footprint-page .world-map-section{min-height:calc(100vh - 100px);padding:clamp(36px,6vh,72px) 5vw 64px;background:#eee8df}
+.footprint-page .world-map-heading{max-width:1800px;margin:0 auto 10px;align-items:center}
+.footprint-page .world-map-heading h1{margin:0;font:700 clamp(34px,4vw,54px)/1 "Zuume Cut",Impact,"Arial Narrow",sans-serif;letter-spacing:.02em;color:var(--ink)}
+.map-gesture-hint{max-width:1800px;margin:0 auto 16px;color:var(--muted);font:12px/1.7 var(--sans)}
+.footprint-page .world-map-frame{max-width:1800px;padding:18px;background:#f8f5ed}
+.footprint-page .map-canvas{overflow:hidden;aspect-ratio:2/1;border-radius:2px;background:#dfe4df}
+.map-viewport{position:absolute;inset:0;overflow:hidden;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none;outline:none}
+.map-viewport:focus-visible{box-shadow:inset 0 0 0 2px #275f3e}
+.map-viewport.is-dragging{cursor:grabbing}
+.map-world{position:absolute;top:0;left:0;aspect-ratio:2/1}
+.map-world .world-map-art{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:hidden;pointer-events:none}
+.map-world .admin-region-layer{opacity:0;transition:opacity .22s ease}
+.map-world.show-admin-regions .admin-region-layer{opacity:1}
+.map-marker-layer{position:absolute;z-index:2;inset:0;display:block;width:100%;height:100%;overflow:hidden;pointer-events:none}
+.map-marker-layer .map-marker{pointer-events:all}
+.map-marker-layer .map-marker-hit{r:13;fill:transparent;stroke:none;pointer-events:all}
+.map-marker-layer .map-dot{r:3.2;stroke-width:1;vector-effect:non-scaling-stroke}
+.map-place-bubble{z-index:4}
+.footprint-page footer{flex:0 0 auto}
+@media(max-width:700px){
+  .footprint-page>header{padding-left:5vw;padding-right:5vw}
+  .footprint-page .world-map-section{min-height:calc(100svh - 74px);padding:34px 5vw 42px}
+  .footprint-page .world-map-heading{align-items:center;gap:12px;margin-bottom:8px}
+  .footprint-page .world-map-heading h1{font-size:clamp(30px,8vw,42px)}
+  .footprint-page .world-map-heading .map-legend{gap:10px}
+  .footprint-page .world-map-heading .map-legend b{font-size:14px}
+  .map-gesture-hint{margin-bottom:12px;font-size:10px}
+  .footprint-page .world-map-frame{padding:10px}
+  .footprint-page .map-canvas{aspect-ratio:1.42/1;min-height:300px;max-height:68svh}
+}
+@media(max-width:390px){
+  .footprint-page .world-map-heading{align-items:flex-start;flex-direction:column}
+}
